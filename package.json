@@ -1,0 +1,52 @@
+{
+  "name": "tableflare",
+  "description": "Airtable Cloudflare URL Shortener 🌤",
+  "version": "0.0.1",
+  "main": "index.mjs",
+  "scripts": {
+    "# general commands": "--------------------------------------------------",
+    "deduplicate": "npx yarn-deduplicate && yarn install",
+    "dev": "wrangler dev",
+    "prepare": "husky install $PWD/.husky",
+    "publish": "wrangler publish",
+    "validate": "eslint --fix --no-cache",
+    "#": "-------------------------------------------------------------------"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^3",
+    "eslint": "^7",
+    "eslint-config-kdnj": "^1",
+    "husky": "^7",
+    "lint-staged": "^12"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint-config-kdnj"
+    ],
+    "ignorePatterns": [
+      "node_modules"
+    ],
+    "rules": {
+      "import/extensions": [
+        "off"
+      ]
+    },
+    "root": true
+  },
+  "lint-staged": {
+    "*.{json,md}": [
+      "prettier --write"
+    ],
+    "**/*.{js,cjs,mjs,ts}": [
+      "eslint --fix"
+    ]
+  },
+  "prettier": {
+    "endOfLine": "auto",
+    "printWidth": 120,
+    "semi": true,
+    "singleQuote": false,
+    "trailingComma": "all"
+  },
+  "license": "MIT"
+}

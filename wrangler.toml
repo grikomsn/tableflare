@@ -1,0 +1,15 @@
+account_id = "e02a25d4d8f0bacceba5cb29bcaa74de" # Griko Nibras
+zone_id = "221bb07dca31508211c49645fa2aa061" # griko.dev
+
+name = "tableflare"
+route = "tableflare.griko.dev/*"
+type = "javascript"
+workers_dev = true
+
+compatibility_date = "2022-01-06"
+
+[vars]
+# AIRTABLE_BASE = "appxxxxxxxxxxxxxx"
+# AIRTABLE_KEY = "keyxxxxxxxxxxxxxx"
+DEFAULT_REDIRECT = "https://github.com/grikomsn/tableflare"
+TABLE_NAME = "Tableflare"
