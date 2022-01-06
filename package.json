@@ -1,6 +1,6 @@
 {
   "name": "tableflare",
-  "description": "Airtable Cloudflare URL Shortener 🌤",
+  "description": "Airtable + Cloudflare Workers URL Shortener 🌤",
   "version": "0.0.1",
   "main": "index.mjs",
   "scripts": {
